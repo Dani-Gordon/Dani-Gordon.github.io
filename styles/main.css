@@ -1,7 +1,89 @@
 body {
-  background-color: plum;
+  background-image: url('../images/light-purple-flower.jpg');
+  /* background-image: linear-gradient(black, plum); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  height: 100vh;
 }
 
 h1 {
   text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 60px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 5px;
+  /* color: rgba(36, 142, 142, 0.9); */
+  color: white;
+  font-family: 'Work Sans', sans-serif;
+}
+
+i {
+  font-size: 50px;
+  padding-left: 25px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 2px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+}
+
+hr {
+  width: 10%;
+  height: 5px;
+  margin-left: 0px;
+}
+
+#skills h4 {
+  text-align: right;
+  padding-right: 240px;
+  margin-bottom: 15px;
+  font-size: 30px;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.tech-stack {
+  float: right;
+  flex-wrap: wrap;
+  padding-right: 140px;
+}
+
+#connect i {
+  font-size: 30px;
+}
+
+li {
+  display: inline-block;
+  flex-direction: end;
+  align-content: right;
+  font-size: 17px;
+  font-weight: bold;
+  margin: auto;
+  list-style: none;
+}
+
+ul {
+  float: right;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Work Sans', sans-serif;
+  padding-right: 15px;
 }
