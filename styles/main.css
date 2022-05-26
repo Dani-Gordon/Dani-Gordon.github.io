@@ -79,14 +79,16 @@ hr {
 }
 
 p {
-  color: whitesmoke;
-  font-size: 20px;
+  color: rgb(255, 253, 253);
+  font-size: 15px;
   text-align: center;
-  font-family: 'Teko', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
 
 #about p {
   border: 5px dotted black;
+  border-radius: 20px;
+  margin: 20px 150px;
 }
 
 h4 {
@@ -135,7 +137,7 @@ img {
   padding-top: 8px;
   gap: 1rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   /* float: right;
   flex-wrap: wrap;
   padding-right: 140px;
