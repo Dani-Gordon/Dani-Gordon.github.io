@@ -4,8 +4,7 @@
 }
 
 body {
-  background-image: url('../images/light-purple-flower.jpg');
-  /* background-image: linear-gradient(black, plum); */
+  background-image: url('../assets/light-purple-flower.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
