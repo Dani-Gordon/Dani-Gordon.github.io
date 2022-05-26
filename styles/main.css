@@ -79,10 +79,14 @@ hr {
 }
 
 p {
-  color: white;
-  font-size: 14px;
+  color: whitesmoke;
+  font-size: 20px;
   text-align: center;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Teko', sans-serif;
+}
+
+#about p {
+  border: 5px dotted black;
 }
 
 h4 {
@@ -144,6 +148,7 @@ img {
 
 #contact-info h2 {
   font-size: 30px;
+  color: white;
   text-align: center;
 }
 
