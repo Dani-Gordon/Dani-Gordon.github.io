@@ -4,10 +4,10 @@
 }
 
 body {
-  background-image: url('../assets/light-purple-flower.jpg');
+  background-image: url('../assets/cave.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: bottom;
+  background-position: right;
   min-height: 100vh;
   max-width: 100vw;
   border: 10px solid black;
@@ -15,23 +15,41 @@ body {
 
 h1 {
   text-align: center;
-  color: black;
+  color: white;
   font-size: 50px;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-bottom: 5px;
   margin-top: 30px;
+  margin-left: 75px;
   font-family: 'Poppins', sans-serif;
   padding-top: 60px;
 }
 
 h2 {
-  text-align: center;
+  /* text-align: center; */
   font-size: 30px;
-  font-weight: bold;
+  /* font-weight: bold; */
   margin-top: 5px;
-  /* color: rgba(36, 142, 142, 0.9); */
-  color: black;
+  margin-left: 550px;
+  color: rgb(25, 117, 117);
+  /* color: black; */
   font-family: 'Work Sans', sans-serif;
+}
+
+.experiencebox ul {
+  width: 500px;
+  float: none;
+  margin-left: 1rem;
+  padding: 20px;
+}
+
+.experiencebox ul li {
+  display: list-item;
+  list-style-type: disc;
+  line-height: normal;
+  font-size: 14px;
+  color: rgb(255, 253, 253);
+  font-family: 'Montserrat', sans-serif;
 }
 
 li {
@@ -64,51 +82,58 @@ i {
 }
 
 h3 {
-  font-size: 25px;
+  font-size: 30px;
   margin-bottom: 2px;
   margin-left: 5px;
   font-weight: bold;
-  color: black;
+  color: white;
   font-family: 'Work Sans', sans-serif;
 }
 
 hr {
-  width: 10%;
+  width: 15%;
   height: 5px;
   margin-left: 5px;
 }
 
-p {
-  color: rgb(255, 253, 253);
+#aboutbox p {
+  /* background-color: white; */
+  padding: 10px;
+  /* border: 1px solid black; */
+  color: white;
   font-size: 15px;
-  text-align: center;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 250px 20px 550px;
 }
 
-#about p {
-  border: 5px dotted black;
-  border-radius: 20px;
-  margin: 20px 150px;
+img {
+  border-radius: 50px;
 }
 
 h4 {
   font-size: 25px;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
 }
 
 .project-item a {
   font-size: 15px;
   font-weight: bold;
-  color: white;
+  color: black;
 }
 
 .project-container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding-top: 8px;
-  gap: 1rem;
+  gap: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+/* .project-item {
+  border: 5px solid rgb(255, 255, 255, 0.4);
+} */
 
 img {
   width: 100%;
@@ -116,8 +141,14 @@ img {
 }
 
 .description {
-  font-weight: bold;
+  /* font-weight: bold; */
+  background-color: rgb(251, 248, 248, 0.5);
+  border-radius: 50px;
+  padding: 20px;
   color: black;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bolder;
 }
 
 #skills h4 {
@@ -127,31 +158,26 @@ img {
   font-size: 30px;
   font-family: 'Work Sans', sans-serif;
   color: white;
-  text-decoration: underline;
-  text-underline-position: below;
+  /* text-decoration: underline; */
+  /* text-underline-position: below; */
 }
 
 .tech-stack {
   max-width: 500px;
   margin: 0 auto;
   padding-top: 8px;
+  padding-bottom: 10px;
   gap: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  /* float: right;
-  flex-wrap: wrap;
-  padding-right: 140px;
-  padding-top: 40px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; */
 }
 
-#contact-info h2 {
+#contact-info {
   font-size: 30px;
+  padding-top: 10px;
   color: white;
   text-align: center;
+  font-family: 'Work Sans', sans-serif;
 }
 
 .contact {
@@ -164,7 +190,7 @@ img {
 }
 
 .image-text-container {
-  padding-top: 40px;
+  padding-top: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
