@@ -17,22 +17,19 @@ h1 {
   text-align: center;
   color: white;
   font-size: 50px;
-  /* font-weight: bold; */
   margin-bottom: 5px;
   margin-top: 30px;
-  margin-left: 75px;
   font-family: 'Poppins', sans-serif;
   padding-top: 60px;
+  padding-left: 10px;
 }
 
 h2 {
-  /* text-align: center; */
+  text-align: center;
   font-size: 30px;
-  /* font-weight: bold; */
+  padding-left: 65px;
   margin-top: 5px;
-  margin-left: 550px;
   color: rgb(25, 117, 117);
-  /* color: black; */
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -40,7 +37,7 @@ h2 {
   width: 500px;
   float: none;
   margin-left: 1rem;
-  padding: 20px;
+  padding: 20px 50px 20px 20px;
 }
 
 .experiencebox ul li {
@@ -48,7 +45,7 @@ h2 {
   list-style-type: disc;
   line-height: normal;
   font-size: 14px;
-  color: rgb(255, 253, 253);
+  color: rgb(229, 220, 220);
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -76,7 +73,7 @@ a {
 }
 
 i {
-  font-size: 40px;
+  font-size: 50px;
   padding-left: 25px;
   color: white;
 }
@@ -90,20 +87,18 @@ h3 {
   font-family: 'Work Sans', sans-serif;
 }
 
-hr {
+/* hr {
   width: 15%;
   height: 5px;
   margin-left: 5px;
-}
+} */
 
 #aboutbox p {
-  /* background-color: white; */
   padding: 10px;
-  /* border: 1px solid black; */
   color: white;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
-  margin: 20px 250px 20px 550px;
+  margin: 20px 250px 20px 545px;
 }
 
 img {
@@ -131,17 +126,12 @@ h4 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-/* .project-item {
-  border: 5px solid rgb(255, 255, 255, 0.4);
-} */
-
 img {
   width: 100%;
   height: 200px;
 }
 
 .description {
-  /* font-weight: bold; */
   background-color: rgb(251, 248, 248, 0.5);
   border-radius: 50px;
   padding: 20px;
@@ -153,7 +143,6 @@ img {
 
 #skills h4 {
   text-align: center;
-  /* padding-right: 240px; */
   margin-bottom: 15px;
   font-size: 30px;
   font-family: 'Work Sans', sans-serif;
@@ -163,13 +152,19 @@ img {
 }
 
 .tech-stack {
-  max-width: 500px;
+  max-width: 800px;
+  text-align: center;
   margin: 0 auto;
-  padding-top: 8px;
+  padding-top: 10px;
   padding-bottom: 10px;
   gap: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.tech-stack p {
+  font-size: 18px;
+  padding-left: 20px;
 }
 
 #contact-info {
