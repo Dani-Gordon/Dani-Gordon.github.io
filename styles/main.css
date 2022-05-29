@@ -7,7 +7,7 @@ body {
   background-image: url('../assets/cave.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  background-position: center;
   min-height: 100vh;
   max-width: 100vw;
   border: 10px solid black;
@@ -27,23 +27,70 @@ h1 {
 h2 {
   text-align: center;
   font-size: 30px;
-  padding-left: 65px;
+  padding-left: 10px;
+  margin-bottom: 40px;
   margin-top: 5px;
   color: rgb(25, 117, 117);
   font-family: 'Work Sans', sans-serif;
 }
 
-.experiencebox ul {
-  width: 500px;
-  float: none;
-  margin-left: 1rem;
-  padding: 20px 50px 20px 20px;
+/*!code for profile pic centered under heading-delete when completed if no longer needed*/
+/* div img {
+  width: 150px;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+#experience i {
+  font-size: 35px;
 }
 
-.experiencebox ul li {
+.experiencebox {
+  display: flex;
+  flex-direction: row;
+  width: 700px;
+  height: auto;
+  padding-right: 0px;
+}
+
+.experiencebox ul {
+  width: 250px;
+  float: none;
+  /* margin-left: 1rem; */
+  padding: 20px 0px 20px 20px;
+}
+
+/* .experiencebox ul li {
   display: list-item;
   list-style-type: disc;
   line-height: normal;
+  font-size: 14px;
+  color: rgb(229, 220, 220);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.experiencebox .dates {
+  list-style-type: none;
+} */
+
+.experiencebox .positions li {
+  display: list-item;
+  list-style-type: disc;
+  line-height: normal;
+  margin-left: 1rem;
+  font-size: 14px;
+  color: rgb(229, 220, 220);
+  font-family: 'Montserrat', sans-serif;
+}
+
+.experiencebox .dates li {
+  display: list-item;
+  list-style-type: none;
+  line-height: normal;
+  margin-left: 0px;
   font-size: 14px;
   color: rgb(229, 220, 220);
   font-family: 'Montserrat', sans-serif;
@@ -72,6 +119,11 @@ a {
   padding-right: 15px;
 }
 
+a:hover {
+  color: rgb(25, 117, 117);
+  transition-duration: 0.5s;
+}
+
 i {
   font-size: 50px;
   padding-left: 25px;
@@ -79,7 +131,7 @@ i {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 35px;
   margin-bottom: 2px;
   margin-left: 5px;
   font-weight: bold;
@@ -87,22 +139,35 @@ h3 {
   font-family: 'Work Sans', sans-serif;
 }
 
-/* hr {
-  width: 15%;
-  height: 5px;
-  margin-left: 5px;
-} */
+#about i {
+  font-size: 35px;
+}
+
+#aboutbox {
+  display: flex;
+  flex-direction: row;
+  max-width: 1200px;
+  height: auto;
+  margin-right: -15px;
+  margin-left: -15px;
+  margin-bottom: 100px;
+}
+
+#aboutbox img {
+  /* padding: 40px 0px 40px 0px; */
+  margin: 40px 0px 20px 150px;
+  height: 200px;
+  width: auto;
+  border-radius: 100%;
+  /* border: 5px solid rgb(25, 117, 117); */
+}
 
 #aboutbox p {
   padding: 10px;
   color: white;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
-  margin: 20px 250px 20px 545px;
-}
-
-img {
-  border-radius: 50px;
+  margin: 20px 150px 20px 80px;
 }
 
 h4 {
@@ -111,10 +176,14 @@ h4 {
   color: white;
 }
 
+#projects i {
+  font-size: 35px;
+}
+
 .project-item a {
   font-size: 15px;
   font-weight: bold;
-  color: black;
+  color: rgb(25, 117, 117);
 }
 
 .project-container {
@@ -129,22 +198,40 @@ h4 {
 img {
   width: 100%;
   height: 200px;
+  border-radius: 50px;
 }
 
 .description {
-  background-color: rgb(251, 248, 248, 0.5);
+  background-color: rgb(0, 0, 0, 0.8);
+  /* background-color: rgb(251, 248, 248, 0.9); */
   border-radius: 50px;
   padding: 20px;
-  color: black;
+  color: white;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bolder;
 }
 
+/* @keyframes readme {
+  from {
+    color: black;
+  }
+  to {
+    color: blue;
+  }
+} */
+
+.readme:hover {
+  color: white;
+  transition-duration: 0.5s;
+  /* animation-name: readme;
+  animation-duration: 1s; */
+}
+
 #skills h4 {
   text-align: center;
   margin-bottom: 15px;
-  font-size: 30px;
+  font-size: 35px;
   font-family: 'Work Sans', sans-serif;
   color: white;
   /* text-decoration: underline; */
