@@ -22,6 +22,8 @@ h1 {
   font-family: 'Poppins', sans-serif;
   padding-top: 60px;
   padding-left: 10px;
+  animation-duration: 5s;
+  animation-name: slideinright;
 }
 
 h2 {
@@ -32,6 +34,22 @@ h2 {
   margin-top: 5px;
   color: rgb(25, 117, 117);
   font-family: 'Work Sans', sans-serif;
+  animation-duration: 5s;
+  animation-name: slideinleft;
+}
+
+@keyframes slideinright {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+
+@keyframes slideinleft {
+  from {
+    margin-right: 100%;
+    width: 300%;
+  }
 }
 
 /*!code for profile pic centered under heading-delete when completed if no longer needed*/
@@ -121,6 +139,7 @@ a {
 
 a:hover {
   color: rgb(25, 117, 117);
+  font-size: 30px;
   transition-duration: 0.5s;
 }
 
@@ -224,6 +243,7 @@ img {
 .readme:hover {
   color: white;
   transition-duration: 0.5s;
+  font-size: 20px;
   /* animation-name: readme;
   animation-duration: 1s; */
 }
