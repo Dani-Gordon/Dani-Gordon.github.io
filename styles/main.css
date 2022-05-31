@@ -314,3 +314,46 @@ img {
   font-weight: bold;
   color: white;
 }
+
+.contact-link a:hover {
+  color: black;
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 480px) {
+  #aboutbox {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #aboutbox img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .tech-stack {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  body {
+    background-position: left;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    background-position: left;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    background-position: left;
+  }
+}
