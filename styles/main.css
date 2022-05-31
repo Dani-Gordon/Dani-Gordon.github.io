@@ -320,11 +320,21 @@ img {
   font-size: 15px;
 }
 
+@media only screen and (max-width: 400){
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media only screen and (max-width: 480px) {
+  body {
+    border: 10px solid black;
+  }
   #aboutbox {
     display: flex;
     flex-direction: column;
   }
+}
 
   #aboutbox img {
     height: 200px;
@@ -334,6 +344,7 @@ img {
 
   .project-container {
     grid-template-columns: 1fr;
+    margin: auto;
   }
 
   .tech-stack {
