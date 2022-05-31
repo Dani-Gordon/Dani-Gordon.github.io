@@ -332,6 +332,10 @@ img {
     border-radius: 50%;
   }
 
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
   .tech-stack {
     grid-template-columns: 1fr 1fr 1fr;
   }
