@@ -320,35 +320,29 @@ img {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 400){
+@media only screen and (max-width: 479px) {
+  body {
+    border: none;
+  }
   .project-container {
     grid-template-columns: 1fr;
+    gap: 1rem;
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 480px) {
   body {
-    border: 10px solid black;
+    border: none;
   }
   #aboutbox {
     display: flex;
     flex-direction: column;
+    margin: auto;
   }
-}
-
   #aboutbox img {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-  }
-
-  .project-container {
-    grid-template-columns: 1fr;
-    margin: auto;
-  }
-
-  .tech-stack {
-    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 
@@ -358,6 +352,7 @@ img {
   }
   body {
     background-position: left;
+    border: none;
   }
 }
 
