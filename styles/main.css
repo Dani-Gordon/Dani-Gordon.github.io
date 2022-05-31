@@ -165,7 +165,7 @@ h3 {
 #aboutbox {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
+  max-width: 1400px;
   height: auto;
   margin-right: -15px;
   margin-left: -15px;
@@ -320,71 +320,20 @@ img {
   font-size: 15px;
 }
 
-@media only screen and (max-width: 1400px) {
-  body {
-    background-position: left;
-  }
-}
-
-@media only screen and (min-width: 769px) {
-  body {
-    background-position: left;
-  }
-  #aboutbox {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media only screen and (max-width: 768px) {
+/* @media screen and (max-width: 479px) {
   .project-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
+} */
+
+/* @media screen and (max-width: 480px) {
   body {
-    background-position: left;
     border: none;
   }
   #aboutbox {
     display: flex;
     flex-direction: column;
     margin: auto;
-  }
-  #aboutbox img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-  }
-  .tech-stack {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media only screen and (min-width: 480px) {
-  body {
-    border: none;
-  }
-  #aboutbox {
-    display: flex;
-    flex-direction: column;
-    /* margin: auto; */
-  }
-  #aboutbox img {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-  }
-  #aboutbox p {
-    margin: auto;
-  }
-}
-
-@media only screen and (max-width: 479px) {
-  body {
-    border: none;
-  }
-  #aboutbox {
-    display: flex;
-    flex-direction: column;
   }
   #aboutbox img {
     height: 200px;
@@ -397,5 +346,61 @@ img {
   .project-container {
     grid-template-columns: 1fr;
     gap: 1rem;
+  }
+} */
+@media screen and (max-width: 899px) {
+  body {
+    background-position: left;
+    border: none;
+  }
+  #aboutbox {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  #aboutbox img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+  .project-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tech-stack {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    background-position: left;
+  }
+  .project-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #aboutbox {
+    display: flex;
+    flex-direction: row;
+    max-width: 1400px;
+    height: auto;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: 100px;
+  }
+
+  #aboutbox img {
+    padding: 40px 0px 40px 0px;
+    margin: 40px 0px 20px 150px;
+    height: 200px;
+    width: auto;
+    border-radius: 100%;
+  }
+
+  #aboutbox p {
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 20px 150px 20px 80px;
   }
 }
