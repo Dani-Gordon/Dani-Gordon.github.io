@@ -330,6 +330,15 @@ footer {
 }
 
 @media all and (max-device-width: 480px) {
+  h1 {
+    animation-duration: 2s;
+    animation-name: slideinright;
+  }
+
+  h2 {
+    animation-duration: 2s;
+    animation-name: slideinleft;
+  }
   #aboutbox {
     display: flex;
     flex-direction: column;
@@ -349,6 +358,18 @@ footer {
     grid-template-columns: 1fr;
     /* grid-template-rows: 1fr; */
     gap: 1rem;
+  }
+
+  .experiencebox .positions li {
+    color: white;
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
+  }
+
+  .experiencebox .dates li {
+    color: white;
+    font-weight: 700;
+    font-family: 'Work Sans', sans-serif;
   }
   .tech-stack {
     grid-template-columns: 1fr 1fr 1fr;
