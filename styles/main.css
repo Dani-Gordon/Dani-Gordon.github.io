@@ -320,16 +320,16 @@ img {
   font-size: 15px;
 }
 
-/* @media screen and (max-width: 479px) {
-  .project-container {
-    grid-template-columns: 1fr;
-  }
-} */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4vh;
+  color: rgb(229, 220, 220);
+  font-weight: bold;
+}
 
-/* @media screen and (max-width: 480px) {
-  body {
-    border: none;
-  }
+@media all and (max-device-width: 480px) {
   #aboutbox {
     display: flex;
     flex-direction: column;
@@ -343,15 +343,23 @@ img {
   #aboutbox p {
     margin: auto;
   }
+
   .project-container {
+    max-width: 480px;
     grid-template-columns: 1fr;
+    /* grid-template-rows: 1fr; */
     gap: 1rem;
   }
-} */
-@media screen and (max-width: 899px) {
+  .tech-stack {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/* if screen is smaller than 899px, do this */
+@media screen and (min-width: 481px) and (max-width: 899px) {
   body {
     background-position: left;
-    border: none;
+    /* border: none; */
   }
   #aboutbox {
     display: flex;
@@ -370,8 +378,8 @@ img {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-
-@media screen and (min-width: 900px) {
+/* if screen is bigger than 900px, do this*/
+@media screen and (min-width: 900px) and (max-width: 1280) {
   body {
     background-position: left;
   }
