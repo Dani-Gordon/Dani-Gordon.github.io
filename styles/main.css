@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url('../assets/cave.jpg');
+  background-image: url('../assets/cave2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,7 +16,7 @@ body {
 h1 {
   text-align: center;
   color: white;
-  font-size: 50px;
+  font-size: 60px;
   margin-bottom: 5px;
   margin-top: 30px;
   font-family: 'Poppins', sans-serif;
@@ -28,7 +28,7 @@ h1 {
 
 h2 {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   padding-left: 10px;
   margin-bottom: 40px;
   margin-top: 5px;
@@ -64,14 +64,17 @@ h2 {
 
 #experience i {
   font-size: 35px;
+  color: rgb(25, 117, 117);
 }
 
 .experiencebox {
   display: flex;
   flex-direction: row;
-  width: 700px;
+  width: 350px;
   height: auto;
   padding-right: 0px;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 50px;
 }
 
 .experiencebox ul {
@@ -81,27 +84,15 @@ h2 {
   padding: 20px 0px 20px 20px;
 }
 
-/* .experiencebox ul li {
-  display: list-item;
-  list-style-type: disc;
-  line-height: normal;
-  font-size: 14px;
-  color: rgb(229, 220, 220);
-  font-family: 'Montserrat', sans-serif;
-}
-
-.experiencebox .dates {
-  list-style-type: none;
-} */
-
 .experiencebox .positions li {
   display: list-item;
   list-style-type: disc;
   line-height: normal;
   margin-left: 1rem;
-  font-size: 14px;
+  font-size: 13px;
   color: rgb(229, 220, 220);
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 .experiencebox .dates li {
@@ -109,16 +100,17 @@ h2 {
   list-style-type: none;
   line-height: normal;
   margin-left: 0px;
-  font-size: 14px;
+  font-size: 13px;
   color: rgb(229, 220, 220);
   font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
 }
 
 li {
   display: inline-block;
   flex-direction: end;
   align-content: right;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
   margin: auto;
   list-style: none;
@@ -153,13 +145,13 @@ h3 {
   font-size: 35px;
   margin-bottom: 2px;
   margin-left: 5px;
-  font-weight: bold;
   color: white;
   font-family: 'Work Sans', sans-serif;
 }
 
 #about i {
   font-size: 35px;
+  color: rgb(25, 117, 117);
 }
 
 #aboutbox {
@@ -186,6 +178,7 @@ h3 {
   color: white;
   font-size: 15px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
   margin: 20px 150px 20px 80px;
 }
 
@@ -197,6 +190,7 @@ h4 {
 
 #projects i {
   font-size: 35px;
+  color: rgb(25, 117, 117);
 }
 
 .project-item a {
@@ -346,7 +340,7 @@ footer {
   }
   #aboutbox img {
     height: 200px;
-    width: 200px;
+    width: auto;
     border-radius: 50%;
   }
   #aboutbox p {
@@ -360,26 +354,44 @@ footer {
     gap: 1rem;
   }
 
+  .experiencebox {
+    width: 325px;
+  }
+
+  .experiencebox ul {
+    width: 200px;
+  }
+
   .experiencebox .positions li {
     color: white;
     font-weight: 700;
     font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
   }
 
   .experiencebox .dates li {
     color: white;
     font-weight: 700;
     font-family: 'Work Sans', sans-serif;
+    font-size: 11px;
   }
   .tech-stack {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .tech-stack i {
+    padding-left: 0px;
+  }
+
+  .tech-stack p {
+    padding-left: 0px;
   }
 }
 
 /* if screen is smaller than 899px, do this */
 @media screen and (min-width: 481px) and (max-width: 899px) {
   body {
-    background-position: left;
+    background-position: center;
     /* border: none; */
   }
   #aboutbox {
